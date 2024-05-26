@@ -1,0 +1,6 @@
+name: ItemCombine
+version: '${project.version}'
+main: cx.fritzsche.itemcombine.ItemCombine
+api-version: '1.20'
+commands:
+  combine:
