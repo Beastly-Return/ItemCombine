@@ -1,8 +1,10 @@
 package cx.fritzsche.itemcombine.utils;
 
 import cx.fritzsche.itemcombine.ItemCombine;
+
 import java.util.List;
 import java.util.UUID;
+
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.attribute.Attribute;
@@ -95,30 +97,28 @@ public class Items {
             }
         }
 
-            for (String enchantString : ItemCombine.plugin.getItemsConfig().getConfigurationSection("Items." + configName + ".Levels." + newLevel + ".Enchantments").getKeys(false)) {
-                Enchantment enchant = Enchantment.getByName(enchantString);
-                int level = ItemCombine.plugin.getItemsConfig().getInt("Items." + configName + ".Levels." + newLevel + ".Enchantments." + enchantString);
-                itemMeta.addEnchant(enchant, level, true);
-            }
-            displayName = ChatColor.translateAlternateColorCodes('&', displayName);
-            itemMeta.setDisplayName(displayName);
-            itemMeta.setLore(lore);
-            if (ItemCombine.plugin.getConfig().getBoolean("Config.hide-enchantments")) {
-                itemMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-            }
-            if (ItemCombine.plugin.getConfig().getBoolean("Config.hide-attributes")) {
-                itemMeta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
-            }
-            itemMeta.setUnbreakable(true);
-            itemMeta.setMaxStackSize(1);
-            return itemMeta;
+        for (String enchantString : ItemCombine.plugin.getItemsConfig().getConfigurationSection("Items." + configName + ".Levels." + newLevel + ".Enchantments").getKeys(false)) {
+            Enchantment enchant = Enchantment.getByName(enchantString);
+            int level = ItemCombine.plugin.getItemsConfig().getInt("Items." + configName + ".Levels." + newLevel + ".Enchantments." + enchantString);
+            itemMeta.addEnchant(enchant, level, true);
         }
+        displayName = ChatColor.translateAlternateColorCodes('&', displayName);
+        itemMeta.setDisplayName(displayName);
+        itemMeta.setLore(lore);
+        if (ItemCombine.plugin.getConfig().getBoolean("Config.hide-enchantments")) {
+            itemMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+        }
+        if (ItemCombine.plugin.getConfig().getBoolean("Config.hide-attributes")) {
+            itemMeta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
+        }
+        itemMeta.setUnbreakable(true);
+        itemMeta.setMaxStackSize(1);
+        return itemMeta;
+    }
 
-    private static int getLevelForAmount(int amount)
-    {
+    private static int getLevelForAmount(int amount) {
         int level = 0;
-        for (String key : ItemCombine.plugin.getConfig().getConfigurationSection("Config.Levels").getKeys(false))
-        {
+        for (String key : ItemCombine.plugin.getConfig().getConfigurationSection("Config.Levels").getKeys(false)) {
             int requiredAmount = ItemCombine.plugin.getConfig().getConfigurationSection("Config.Levels").getInt(key);
             if (amount < requiredAmount) {
                 break;
