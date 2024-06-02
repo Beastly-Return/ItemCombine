@@ -2,6 +2,7 @@ package cx.fritzsche.itemcombine.events;
 
 import cx.fritzsche.itemcombine.ItemCombine;
 import cx.fritzsche.itemcombine.utils.Items;
+import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -37,8 +38,10 @@ public class InventoryClick implements Listener {
                     if (Boolean.TRUE.equals(isUpgradeableClicked) && Boolean.TRUE.equals(isUpgradeableCursor) && nameClicked.equals(nameCursor)) {
                         e.setCancelled(true);
                         Integer combinedAmount = amountClicked + amountCursor;
-                        player.sendMessage("Both Items can be Upgraded and are equal type!");
-                        player.sendMessage("New amount: " + combinedAmount);
+                        if(ItemCombine.plugin.getConfig().getBoolean("Config.Debug")) {
+                            player.sendMessage("Both Items can be Upgraded and are equal type!");
+                            player.sendMessage("New amount: " + combinedAmount);
+                        }
                         ItemMeta newMeta = Items.applyData(clickedItem.getItemMeta(), combinedAmount);
                         if(newMeta != null) {
                             cursorItem.setAmount(0);

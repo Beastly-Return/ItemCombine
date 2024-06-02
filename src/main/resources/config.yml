@@ -1,6 +1,7 @@
 Config:
   hide-enchantments: true
   hide-attributes: true
+  debug: false
   Levels:
     1: 1
     2: 3
