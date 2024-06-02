@@ -2,7 +2,6 @@ package cx.fritzsche.itemcombine.events;
 
 import cx.fritzsche.itemcombine.ItemCombine;
 import cx.fritzsche.itemcombine.utils.Items;
-import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
