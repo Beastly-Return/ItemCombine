@@ -14,7 +14,7 @@ public class CombineCommand implements CommandExecutor {
 
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender instanceof Player) {
-            Player player = (Player)sender;
+            Player player = (Player) sender;
             if (args.length > 0) {
                 if (args[0].equalsIgnoreCase("give")) {
                     if (!player.hasPermission("itemcombine.give")) {
@@ -56,7 +56,7 @@ public class CombineCommand implements CommandExecutor {
                     ItemCombine.plugin.reloadConfig();
                     ItemCombine.plugin.reloadItemsConfig();
                 }
-            }else{
+            } else {
                 player.sendMessage(prefix + "§8ItemCombine 1.0");
                 player.sendMessage(prefix + "§7 /combine give <player> <item> (<amount>)");
                 player.sendMessage(prefix + "§7 /combine reload");

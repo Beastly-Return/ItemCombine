@@ -3,7 +3,9 @@ package cx.fritzsche.itemcombine;
 import cx.fritzsche.itemcombine.commands.CombineCommand;
 import cx.fritzsche.itemcombine.commands.CombineTab;
 import cx.fritzsche.itemcombine.events.InventoryClick;
+
 import java.io.File;
+
 import org.bukkit.Bukkit;
 import org.bukkit.NamespacedKey;
 import org.bukkit.configuration.file.FileConfiguration;

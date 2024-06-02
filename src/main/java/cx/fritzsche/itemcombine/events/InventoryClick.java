@@ -15,7 +15,7 @@ public class InventoryClick implements Listener {
     @EventHandler
     public void upgradeItem(InventoryClickEvent e) {
         if (e.getWhoClicked() instanceof Player) {
-            Player player = (Player)e.getWhoClicked();
+            Player player = (Player) e.getWhoClicked();
             ItemStack clickedItem = e.getCurrentItem();
             ItemStack cursorItem = e.getCursor();
             if (clickedItem != null && clickedItem.hasItemMeta()) {
@@ -37,15 +37,15 @@ public class InventoryClick implements Listener {
                     if (Boolean.TRUE.equals(isUpgradeableClicked) && Boolean.TRUE.equals(isUpgradeableCursor) && nameClicked.equals(nameCursor)) {
                         e.setCancelled(true);
                         Integer combinedAmount = amountClicked + amountCursor;
-                        if(ItemCombine.plugin.getConfig().getBoolean("Config.Debug")) {
+                        if (ItemCombine.plugin.getConfig().getBoolean("Config.Debug")) {
                             player.sendMessage("Both Items can be Upgraded and are equal type!");
                             player.sendMessage("New amount: " + combinedAmount);
                         }
                         ItemMeta newMeta = Items.applyData(clickedItem.getItemMeta(), combinedAmount);
-                        if(newMeta != null) {
+                        if (newMeta != null) {
                             cursorItem.setAmount(0);
                             clickedItem.setItemMeta(newMeta);
-                        }else{
+                        } else {
                             player.sendMessage("Something went wrong! Please contact the Admins!");
                         }
                     }
