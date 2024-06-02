@@ -1,0 +1,155 @@
+Items:
+  crazyrod:
+    Material: "BLAZE_ROD"
+    Name: "&cCrazy Rod"
+    Levels:
+      1:
+        DisplayName: "{name} &e[Lv {level}]"
+        Lore:
+          - "&7Rarity: &cLegendary"
+          - "&8------------------"
+          - "&eAttack Speed: 0.4"
+          - "&eAttack Damage: 14"
+          - "&8------------------"
+          - "&7Progress: {visableamount} / {neededamount}"
+          - "{progressbar} {percentage}"
+        Attributes:
+          GENERIC_ATTACK_SPEED:
+            Value: 0.4
+            Slot:
+              - "HAND"
+          GENERIC_ATTACK_DAMAGE:
+            Value: 14
+            Slot:
+              - "HAND"
+        Enchantments:
+          DURABILITY: 1
+      2:
+        DisplayName: "{name} &e[Lv {level}]"
+        Lore:
+          - "&7Rarity: &cLegendary"
+          - "&8------------------"
+          - "&eAttack Speed: 0.3"
+          - "&eAttack Damage: 15"
+          - "&8------------------"
+          - "&7Progress: {visableamount} / {neededamount}"
+          - "{progressbar} {percentage}"
+        Attributes:
+          GENERIC_ATTACK_SPEED:
+            Value: 0.3
+            Slot:
+              - "HAND"
+          GENERIC_ATTACK_DAMAGE:
+            Value: 15
+            Slot:
+              - "HAND"
+        Enchantments:
+          DURABILITY: 1
+      3:
+        DisplayName: "{name} &e[Lv {level}]"
+        Lore:
+          - "&7Rarity: &cLegendary"
+          - "&8------------------"
+          - "&eAttack Speed: 0.4"
+          - "&eAttack Damage: 15.5"
+          - "&8------------------"
+          - "&7Progress: {visableamount} / {neededamount}"
+          - "{progressbar} {percentage}"
+        Attributes:
+          GENERIC_ATTACK_SPEED:
+            Value: 0.4
+            Slot:
+              - "HAND"
+          GENERIC_ATTACK_DAMAGE:
+            Value: 15.5
+            Slot:
+              - "HAND"
+        Enchantments:
+          DURABILITY: 1
+      4:
+        DisplayName: "{name} &e[Lv {level}]"
+        Lore:
+          - "&7Rarity: &cLegendary"
+          - "&8------------------"
+          - "&eAttack Speed: 0.5"
+          - "&eAttack Damage: 15.75"
+          - "&8------------------"
+          - "&7Progress: {visableamount} / {neededamount}"
+          - "{progressbar} {percentage}"
+        Attributes:
+          GENERIC_ATTACK_SPEED:
+            Value: 0.5
+            Slot:
+              - "HAND"
+          GENERIC_ATTACK_DAMAGE:
+            Value: 15.75
+            Slot:
+              - "HAND"
+        Enchantments:
+          DURABILITY: 1
+      5:
+        DisplayName: "{name} &e[Lv {level}]"
+        Lore:
+          - "&7Rarity: &cLegendary"
+          - "&8------------------"
+          - "&eAttack Speed: 0.6"
+          - "&eAttack Damage: 16.25"
+          - "&8------------------"
+          - "&7Progress: {visableamount} / {neededamount}"
+          - "{progressbar} {percentage}"
+        Attributes:
+          GENERIC_ATTACK_SPEED:
+            Value: 0.6
+            Slot:
+              - "HAND"
+          GENERIC_ATTACK_DAMAGE:
+            Value: 16.25
+            Slot:
+              - "HAND"
+        Enchantments:
+          DURABILITY: 1
+      6:
+        DisplayName: "{name} &e[Lv {level}]"
+        Lore:
+          - "&7Rarity: &cLegendary"
+          - "&8------------------"
+          - "&eAttack Speed: 0.6"
+          - "&eAttack Damage: 17.25"
+          - "&8------------------"
+          - "&7Progress: {visableamount} / {neededamount}"
+          - "{progressbar} {percentage}"
+        Attributes:
+          GENERIC_ATTACK_SPEED:
+            Value: 0.6
+            Slot:
+              - "HAND"
+          GENERIC_ATTACK_DAMAGE:
+            Value: 17.25
+            Slot:
+              - "HAND"
+        Enchantments:
+          DURABILITY: 1
+      7:
+        DisplayName: "{name} &e[Lv {level}]"
+        Lore:
+          - "&7Rarity: &cLegendary"
+          - "&8------------------"
+          - "&eAttack Speed: 0.7"
+          - "&eAttack Damage: 17.5"
+          - "&8------------------"
+          - "&4&lMAX LEVEL"
+        Attributes:
+          GENERIC_ATTACK_SPEED:
+            Value: 0.7
+            Slot:
+              - "HAND"
+          GENERIC_ATTACK_DAMAGE:
+            Value: 17.5
+            Slot:
+              - "HAND"
+          PLAYER_ENTITY_INTERACTION_RANGE:
+            Value: 10
+            Slot:
+              - "HAND"
+        Enchantments:
+          DURABILITY: 1

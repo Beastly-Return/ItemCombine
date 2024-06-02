@@ -1,0 +1,11 @@
+Config:
+  hide-enchantments: true
+  hide-attributes: true
+  Levels:
+    1: 1
+    2: 3
+    3: 6
+    4: 10
+    5: 25
+    6: 50
+    7: 100

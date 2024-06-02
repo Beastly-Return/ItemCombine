@@ -1,2 +1,6 @@
 cx\fritzsche\itemcombine\commands\CombineCommand.class
+cx\fritzsche\itemcombine\commands\CombineTab.class
+cx\fritzsche\itemcombine\utils\ProgressBar.class
 cx\fritzsche\itemcombine\ItemCombine.class
+cx\fritzsche\itemcombine\events\InventoryClick.class
+cx\fritzsche\itemcombine\utils\Items.class
